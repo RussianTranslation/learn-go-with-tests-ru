@@ -77,7 +77,7 @@
 
 > Как мне протестировать мою суперскую функцию, которая делает x, y и z
 
-If you have such a question raise it as an issue on github and I'll try and find time to write a short chapter to tackle the issue. I feel like content like this is valuable as it is tackling people's _real_ questions around testing.
+Если у вас похожий вопрос, создайте issue на github, и я постараюсь найти время, чтобы написать короткую главу, чтобы найти решение этой проблемы. Мне кажется, что подобный контент ценен, поскольку он решает _реальные_ вопросы людей по поводу тестирования.
 
 * [OS exec](os-exec.md) - An example of how we can reach out to the OS to execute commands to fetch data and keep our business logic testable/
 * [Error types](error-types.md) - Example of creating your own error types to improve your tests and make your code easier to work with.
