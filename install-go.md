@@ -6,7 +6,7 @@ This guide will assume that you are using a package manager for e.g. [Homebrew](
 
 For demonstration purposes we will show the installation procedure for OSX using Homebrew.
 
-## Installation
+## Установка
 
 The process of installation is very easy. First, what you have to do is to run this command to install homebrew. It has a dependency on Xcode so you should ensure this is installed first.
 
