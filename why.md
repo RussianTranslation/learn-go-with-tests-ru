@@ -104,7 +104,7 @@ Here is a function which greets `name` in a particular `language`
          return "Bonjour, " + name
       }
       
-      // imagine dozens more languages
+      // представьте десятки других языков
     
       return "Hello, " + name
     }
@@ -274,7 +274,7 @@ Agile teaches us that we need to work iteratively, starting small and evolving t
 
 TDD addresses the laws that Lehman talks about and other lessons hard learned through history by encouraging a methodology of constantly refactoring and delivering iteratively.
 
-### Small steps
+### Маленькие шаги
 
 - Write a small test for a small amount of desired behaviour
 - Check the test fails with a clear error (red)
