@@ -99,7 +99,7 @@
 
 #### Чтение _какой-то_ книги
 
-Мы попробовали использовать [синюю книгу] (https://www.amazon.co.uk/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440) и каждую неделю обсуждать следующую главу вместе с упражнениями.
+Мы попробовали использовать [синюю книгу](https://www.amazon.co.uk/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440) и каждую неделю обсуждать следующую главу вместе с упражнениями.
 
 Мне нравится эта книга, но она требует большой отдачи. В книге очень подробно объясняются концепции, что, конечно, здорово, но это означает, что прогресс идет медленно и неуклонно - это не для всех.
 
@@ -113,23 +113,23 @@
 
 Это приводит к тому, что обучение кажется совершенно _неструктурированным_ и _бесполезным_.
 
-### What did work
+### Что сработало
 
-By far the most effective way was by slowly introducing the fundamentals of the language by reading through [go by example](https://gobyexample.com/), exploring them with examples and discussing them as a group. This was a more interactive approach than "read chapter x for homework".
+Безусловно, наиболее эффективным способом было постепенное знакомство с основами языка путем просмотра [_go by examples_](https://gobyexample.com/), изучения примеров и обсуждения в группе. Это был более интерактивный подход, чем «читать главу x для домашнего задания».
 
-Over time the team gained a solid foundation of the _grammar_ of the language so we could then start to build systems.
+Со временем команда приобрела прочную основу _грамматики_ языка, чтобы мы могли приступить к созданию систем.
 
-This to me seems analogous to practicing scales when trying to learn guitar.
+Мне это кажется похожим на разучивания гамм при изучении игры на гитаре.
 
-It doesn't matter how artistic you think you are, you are unlikely to write good music without understanding the fundamentals and practicing the mechanics.
+Неважно, насколько вы артистичны, вы вряд ли напишете хорошую музыку без понимания основ и отработки механики.
 
-### What works for me
+### Что работает для меня
 
-When _I_ learn a new programming language I usually start by messing around in a REPL but eventually, I need more structure.
+Когда _я_ изучаю новый язык программирования, то обычно начинаю возиться с REPL, но в конечном итоге мне нужно больше структуры.
 
-What I like to do is explore concepts and then solidify the ideas with tests. Tests verify the code I write is correct and documents the feature I have learned.
+Мне нравится изучать концепции, а затем закреплять идеи с помощью тестов. Тесты проверяют правильность написанного мной кода и документируют изученную мной функцию.
 
-Taking my experience of learning with a group and my own personal way I am going to try and create something that hopefully proves useful to other teams. Learning the fundamentals by writing small tests so that you can then take your existing software design skills and ship some great systems.
+Принимая во внимание мой опыт обучения в группе и свой личный подход, я собираюсь попытаться создать что-то, что, надеюсь, окажется полезным для других команд. Изучение основ путем написания небольших тестов, чтобы вы могли затем использовать свои существующие навыки проектирования программного обеспечения и создать несколько отличных систем.
 
 ## Для кого 
 
