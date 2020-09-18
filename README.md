@@ -69,7 +69,7 @@
 * [IO и сортировка](io.md) - Мы будем сохранять и читать наши данные с диска, а также рассмотрим сортировку данных.
 * [Командная строка и структура проекта](command-line.md) - Поддержка нескольких приложений из одной кодовой базы и чтение ввода из командной строки.
 * [Время](time.md) - Использование пакета `time` для создание расписания.
-* [Вебсокеты (webSockets)](websockets.md) - как написать и протестировать сервер, использующий вебсокеты (webSockets).
+* [Вебсокеты (WebSockets)](websockets.md) - как написать и протестировать сервер, использующий вебсокеты (webSockets).
 
 ### Вопросы и ответы
 
@@ -79,10 +79,11 @@
 
 Если у вас похожий вопрос, создайте issue на github, и я постараюсь найти время, чтобы написать короткую главу, чтобы найти решение этой проблемы. Мне кажется, что подобный контент ценен, поскольку он решает _реальные_ вопросы людей по поводу тестирования.
 
-* [OS exec](os-exec.md) - An example of how we can reach out to the OS to execute commands to fetch data and keep our business logic testable/
-* [Error types](error-types.md) - Example of creating your own error types to improve your tests and make your code easier to work with.
-* [Context-aware Reader](context-aware-reader.md) - Learn how to TDD augmenting `io.Reader` with cancellation. Based on [Context-aware io.Reader for Go](https://pace.dev/blog/2020/02/03/context-aware-ioreader-for-golang-by-mat-ryer)
-* [Revisiting HTTP Handlers](http-handlers-revisited.md) - Testing HTTP handlers seems to be the bane of many a developer's existence. This chapter explores the issues around designing handlers correctly.
+* [OS exec](os-exec.md) - Пример того, как мы можем обратиться к ОС для выполнения команд для выборки данных и обеспечения тестируемости нашей бизнес-логики.
+* [Типы `error`](error-types.md) - Пример создания собственных типов ошибок для улучшения тестирования и упрощения работы с кодом.
+* [Контекстно-зависимый Reader](context-aware-reader.md) - Узнайте, как TDD дополняет `io.Reader` с отменой (cancellation). Основывается на [Контекстно-зависимый io.Reader для Go] (https://pace.dev/blog/2020/02/03/context-aware-ioreader-for-golang-by-mat-ryer)
+* [Возвращение к HTTP-обработчикам](http-handlers-revisited.md) - Установление HTTP-обработчиков кажется ужасом для многих разработчиков. В этой главе рассматриваются вопросы, связанные с правильным проектированием обработчиков.
+
 
 ## Внести вклад
 
