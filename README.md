@@ -49,8 +49,8 @@
 13. [Рефлексия (reflection)](reflection.md) - Изучение рефлексии (reflection)
 13. [Пакет `sync`](sync.md) - Изучение некоторых функций пакета `sync`, включая `WaitGroup` и `Mutex`
 13. [Пакет `context`](context.md) - Использование пакета `context` для управления и завершения длительных процессов
-14. [Введение в тесты на основе свойств](roman-numerals.md) - Practice some TDD with the Roman Numerals kata and get a brief intro to property based tests
-15. [Пакет `math`](math.md) - Использование пакета `math` чтобы нарисовать SVG-часы
+14. [Введение в тесты на основе свойств](roman-numerals.md) - Практика TDD над упражнением с римскими цифрами и краткое описание тестов на основе свойств
+15. [Пакет `math`](math.md) - Применение пакета `math` чтобы нарисовать SVG-часы
 
 ### Создание приложения
 
