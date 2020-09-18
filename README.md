@@ -16,6 +16,7 @@
 
 ## Переводы
 
+- [English](https://github.com/quii/learn-go-with-tests)
 - [中文](https://studygolang.gitbook.io/learn-go-with-tests)
 - [Português](https://larien.gitbook.io/aprenda-go-com-testes/)
 - [日本語](https://andmorefine.gitbook.io/learn-go-with-tests/)
@@ -27,29 +28,29 @@
 * Изучение языка программирования Go посредством написания тестов
 * **Освоение TDD**. Go - прекрасный язык программирования, чтобы изучить TDD,  так как он (Go) легкий в изучении, а тестирование встроено в сам язык
 * Будьте уверены, что Вы сможете начать писать надежные, хорошо тестируемые системы на Go
-* [Посмотрите видео или прочитайте, почему Unit-тестирование и TDD важны](why.md)
+* [Посмотрите видео или прочитайте, почему unit-тестирование и TDD важны](why.md)
 
-## Table of contents
+## Содержание
 
-### Go fundamentals
+### Основы Go
 
-1. [Install Go](install-go.md) - Set up environment for productivity.
-2. [Hello, world](hello-world.md) - Declaring variables, constants, if/else statements, switch, write your first go program and write your first test. Sub-test syntax and closures.
-3. [Integers](integers.md) - Further Explore function declaration syntax and learn new ways to improve the documentation of your code.
-4. [Iteration](iteration.md) - Learn about `for` and benchmarking.
-5. [Arrays and slices](arrays-and-slices.md) - Learn about arrays, slices, `len`, varargs, `range` and test coverage.
-6. [Structs, methods & interfaces](structs-methods-and-interfaces.md) - Learn about `struct`, methods, `interface` and table driven tests.
-7. [Pointers & errors](pointers-and-errors.md) - Learn about pointers and errors.
-8. [Maps](maps.md) - Learn about storing values in the map data structure.
-9. [Dependency Injection](dependency-injection.md) - Learn about dependency injection, how it relates to using interfaces and a primer on io.
-10. [Mocking](mocking.md) - Take some existing untested code and use DI with mocking to test it.
-11. [Concurrency](concurrency.md) - Learn how to write concurrent code to make your software faster.
-12. [Select](select.md) - Learn how to synchronise asynchronous processes elegantly.
-13. [Reflection](reflection.md) - Learn about reflection
-13. [Sync](sync.md) - Learn some functionality from the sync package including `WaitGroup` and `Mutex`
-13. [Context](context.md) - Use the context package to manage and cancel long-running processes
+1. [Установка Go](install-go.md) - Настройка рабочего окружени.
+2. [Hello, world](hello-world.md) - Объявление переменных, констант, if/else операторов, switch, написание первой Go-программы и написание первого теста. Синтаксис субтестов и замыканий.
+3. [Целые числа](integers.md) - Продолжение изучения синтаксиса объявления функций и изучение новых способов документирования Вашего кода.
+4. [Циклы](iteration.md) - Изучение цикла `for` и бенчмаркинга.
+5. [Массивы и слайсы](arrays-and-slices.md) - Изучение массивов, слайсов, `len`, параметров функций, `range` и покрытие кода тестами.
+6. [Структуры, методы и интерфейсы](structs-methods-and-interfaces.md) - Изучение `struct`, методов, `interface` и табличных unit-тестов (table driven tests).
+7. [Указатели и ошибки (errors)](pointers-and-errors.md) - Изучение указателей и ошибок (errors).
+8. [Мапы (карты)](maps.md) - Изучение хранения значений в структуре данных `map`.
+9. [Внедрение зависимостей (DI)](dependency-injection.md) - Изучение внедрения зависимостей (dependency injection), как оно связано с интерфейсами и пример io (input/output).
+10. [Мокинг (mocking)](mocking.md) - Возьмем существующий нетестируемый код и применим DI с мокингом для его тестирования.
+11. [Многопоточность (concurrency)](concurrency.md) - Изучение, как писать многопоточный код для ускорения программного обеспечения.
+12. [Оператор `select`](select.md) - Learn how to synchronise asynchronous processes elegantly.
+13. [Рефлексия (reflection)](reflection.md) - Изучение рефлексии (reflection)
+13. [Пакет `sync`](sync.md) - Learn some functionality from the sync package including `WaitGroup` and `Mutex`
+13. [Пакет `context`](context.md) - Use the context package to manage and cancel long-running processes
 14. [Intro to property based tests](roman-numerals.md) - Practice some TDD with the Roman Numerals kata and get a brief intro to property based tests
-15. [Maths](math.md) - Use the `math` package to draw an SVG clock
+15. [Пакет `math`](math.md) - Use the `math` package to draw an SVG clock
 
 ### Build an application
 
