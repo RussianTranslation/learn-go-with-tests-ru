@@ -145,7 +145,7 @@ Taking my experience of learning with a group and my own personal way I am going
 
 ## Обратная связь
 
-* Создайте issues/отправьте PRs ([русский репозиторий](https://github.com/ohDaddyPlease/learn-go-with-tests-ru), [оригинальный репозиторий](https://github.com/quii/learn-go-with-tests)) or [твитните автора @quii](https://twitter.com/quii) или напишите переводчику в [telegram](https://t.me.com/sergiusnovikov)
+* Создайте issues/отправьте PRs ([русский репозиторий](https://github.com/ohDaddyPlease/learn-go-with-tests-ru), [оригинальный репозиторий](https://github.com/quii/learn-go-with-tests)) или [твитните автора @quii](https://twitter.com/quii) или напишите переводчику в [telegram](https://t.me.com/sergiusnovikov)
 
 [MIT license](LICENSE.md)
 
