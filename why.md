@@ -124,7 +124,7 @@ Having dozens of `if` statements doesn't feel good and we have a duplication of 
     var greetings = map[string]string {
       es: "Hola",
       fr: "Bonjour",
-      //etc..
+      //и т.д.
     }
     
     func greeting(language string) string {
