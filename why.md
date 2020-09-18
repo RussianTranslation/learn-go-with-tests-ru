@@ -93,6 +93,7 @@ When you refactor your code, you are trying to find ways of making your code eas
 
 Here is a function which greets `name` in a particular `language`
 
+```Go
     func Hello(name, language string) string {
     
       if language == "es" {
@@ -107,9 +108,11 @@ Here is a function which greets `name` in a particular `language`
     
       return "Hello, " + name
     }
+```
 
 Having dozens of `if` statements doesn't feel good and we have a duplication of concatenating a language specific greeting with `, ` and the `name.` So I'll refactor the code.
 
+```Go
     func Hello(name, language string) string {
       	return fmt.Sprintf(
       		"%s, %s",
@@ -133,6 +136,7 @@ Having dozens of `if` statements doesn't feel good and we have a duplication of 
       
       return "Hello"
     }
+```
 
 The nature of this refactor isn't actually important, what's important is I haven't changed behaviour. 
 
@@ -158,6 +162,7 @@ Those who choose not to write tests will typically be reliant on manual testing.
 
 A unit test for our `Hello` function could look like this
 
+```Go
     func TestHello(t *testing.T) {
       got := Hello(“Chris”, es)
       want := "Hola, Chris"
@@ -166,6 +171,7 @@ A unit test for our `Hello` function could look like this
          t.Errorf("got %q want %q", got, want)
       }
     }
+```
 
 At the command line I can run `go test` and get immediate feedback as to whether my refactoring efforts have altered behaviour. In practice it's best to learn the magic button to run your tests within your editor/IDE. 
 
