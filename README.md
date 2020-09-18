@@ -12,7 +12,7 @@
 ## Где читать
 
 - [Gitbook](https://quii.gitbook.io/learn-go-with-tests)
-- [EPUB or PDF](https://github.com/quii/learn-go-with-tests/releases)
+- [EPUB или PDF](https://github.com/quii/learn-go-with-tests/releases)
 
 ## Переводы
 
@@ -84,11 +84,11 @@ If you have such a question raise it as an issue on github and I'll try and find
 * [Context-aware Reader](context-aware-reader.md) - Learn how to TDD augmenting `io.Reader` with cancellation. Based on [Context-aware io.Reader for Go](https://pace.dev/blog/2020/02/03/context-aware-ioreader-for-golang-by-mat-ryer)
 * [Revisiting HTTP Handlers](http-handlers-revisited.md) - Testing HTTP handlers seems to be the bane of many a developer's existence. This chapter explores the issues around designing handlers correctly.
 
-## Contributing
+## Внести вклад
 
-* _This project is work in progress_ If you would like to contribute, please do get in touch.
-* Read [contributing.md](https://github.com/quii/learn-go-with-tests/tree/842f4f24d1f1c20ba3bb23cbc376c7ca6f7ca79a/contributing.md) for guidelines
-* Any ideas? Create an issue
+* _Этот проект на стадии разработки_. Если вы хотите внести свой вклад, пожалуйста, свяжитесь с нами.
+* Прочитайте руководство [contributing.md](https://github.com/quii/learn-go-with-tests/tree/842f4f24d1f1c20ba3bb23cbc376c7ca6f7ca79a/contributing.md)
+* Есть идеи? Создайте issue
 
 ## Background
 
