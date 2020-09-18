@@ -42,7 +42,7 @@
 6. [Структуры, методы и интерфейсы](structs-methods-and-interfaces.md) - Изучение `struct`, методов, `interface` и табличных unit-тестов (table driven tests).
 7. [Указатели и ошибки (errors)](pointers-and-errors.md) - Изучение указателей и ошибок (errors).
 8. [Мапы (карты)](maps.md) - Узнайте, как хранить значения в структуре данных `map`.
-9. [Внедрение зависимостей (DI)](dependency-injection.md) - Изучение внедрения зависимостей (dependency injection), как оно связано с интерфейсами и пример io (input/output).
+9. [Внедрение зависимостей (DI)](dependency-injection.md) - Изучение внедрения зависимостей (dependency injection), как оно связано с интерфейсами и пример пакета io (input/output).
 10. [Мокинг (mocking)](mocking.md) - Возьмем существующий нетестируемый код и применим DI с мокингом для его тестирования.
 11. [Многопоточность (concurrency)](concurrency.md) - Узнайте, как писать многопоточный код для ускорения программного обеспечения.
 12. [Оператор `select`](select.md) - Узнайте, как элегантно синхронизировать асинхронные процессы.
@@ -54,28 +54,28 @@
 
 ### Создание приложения
 
-Now that you have hopefully digested the _Go Fundamentals_ section you have a solid grounding of a majority of Go's language features and how to do TDD.
+Теперь, после успешного изучения раздела _Основы Go_, у вас есть уверенные знания основных возможностей Go и как тестировать через TDD.
 
-This next section will involve building an application.
+Данный раздел демонстрирует создание приложения.
 
-Each chapter will iterate on the previous one, expanding the application's functionality as our product owner dictates.
+Каждая глава будет повторять предыдущую, расширяя функциональность приложения, как того требует наш владелец продукта.
 
-New concepts will be introduced to help facilitate writing great code but most of the new material will be learning what can be accomplished from Go's standard library.
+Будут представлены новые концепции, которые помогут облегчить написание отличного кода, но большая часть нового материала будет посвящена изучению того, что можно сделать из стандартной библиотеки Go.
 
-By the end of this, you should have a strong grasp as to how to iteratively write an application in Go, backed by tests.
+К концу этого раздела вы будете понимать, как итеративно писать приложение на Go, опираясь на тесты.
 
-* [HTTP server](http-server.md) - We will create an application which listens to HTTP requests and responds to them.
-* [JSON, routing and embedding](json.md) - We will make our endpoints return JSON and explore how to do routing.
-* [IO and sorting](io.md) - We will persist and read our data from disk and we'll cover sorting data.
-* [Command line & project structure](command-line.md) - Support multiple applications from one code base and read input from command line.
-* [Time](time.md) - using the `time` package to schedule activities.
-* [WebSockets](websockets.md) - learn how to write and test a server that uses WebSockets.
+* [HTTP-сервер](http-server.md) - Мы создадим приложение, которое слушает HTTP-запросы и отвечает на них.
+* [JSON, роутинг и встраивание](json.md) - Мы заставим наши конечные точки (endpoints) возвращать JSON и узнаем, как создавать маршрутизацию (роутинг).
+* [IO и сортировка](io.md) - Мы будем сохранять и читать наши данные с диска, а также рассмотрим сортировку данных.
+* [Командная строка и структура проекта](command-line.md) - Поддержка нескольких приложений из одной кодовой базы и чтение ввода из командной строки.
+* [Время](time.md) - Использование пакета `time` для создание расписания.
+* [Вебсокеты (webSockets)](websockets.md) - как написать и протестировать сервер, использующий вебсокеты (webSockets).
 
 ### Вопросы и ответы
 
-I often run in to questions on the internets like
+Я часто сталкиваюсь с вопросами в интернете, например:
 
-> How do I test my amazing function that does x, y and z
+> Как мне протестировать мою суперскую функцию, которая делает x, y и z
 
 If you have such a question raise it as an issue on github and I'll try and find time to write a short chapter to tackle the issue. I feel like content like this is valuable as it is tackling people's _real_ questions around testing.
 
