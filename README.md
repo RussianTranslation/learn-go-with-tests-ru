@@ -41,18 +41,18 @@
 5. [Массивы и слайсы](arrays-and-slices.md) - Изучение массивов, слайсов, `len`, параметров функций, `range` и покрытие кода тестами.
 6. [Структуры, методы и интерфейсы](structs-methods-and-interfaces.md) - Изучение `struct`, методов, `interface` и табличных unit-тестов (table driven tests).
 7. [Указатели и ошибки (errors)](pointers-and-errors.md) - Изучение указателей и ошибок (errors).
-8. [Мапы (карты)](maps.md) - Изучение хранения значений в структуре данных `map`.
+8. [Мапы (карты)](maps.md) - Узнайте, как хранить значения в структуре данных `map`.
 9. [Внедрение зависимостей (DI)](dependency-injection.md) - Изучение внедрения зависимостей (dependency injection), как оно связано с интерфейсами и пример io (input/output).
 10. [Мокинг (mocking)](mocking.md) - Возьмем существующий нетестируемый код и применим DI с мокингом для его тестирования.
-11. [Многопоточность (concurrency)](concurrency.md) - Изучение, как писать многопоточный код для ускорения программного обеспечения.
-12. [Оператор `select`](select.md) - Learn how to synchronise asynchronous processes elegantly.
+11. [Многопоточность (concurrency)](concurrency.md) - Узнайте, как писать многопоточный код для ускорения программного обеспечения.
+12. [Оператор `select`](select.md) - Узнайте, как элегантно синхронизировать асинхронные процессы.
 13. [Рефлексия (reflection)](reflection.md) - Изучение рефлексии (reflection)
-13. [Пакет `sync`](sync.md) - Learn some functionality from the sync package including `WaitGroup` and `Mutex`
-13. [Пакет `context`](context.md) - Use the context package to manage and cancel long-running processes
-14. [Intro to property based tests](roman-numerals.md) - Practice some TDD with the Roman Numerals kata and get a brief intro to property based tests
-15. [Пакет `math`](math.md) - Use the `math` package to draw an SVG clock
+13. [Пакет `sync`](sync.md) - Изучение некоторых функций пакета `sync`, включая `WaitGroup` и `Mutex`
+13. [Пакет `context`](context.md) - Использование пакета `context` для управления и завершения длительных процессов
+14. [Введение в тесты на основе свойств](roman-numerals.md) - Practice some TDD with the Roman Numerals kata and get a brief intro to property based tests
+15. [Пакет `math`](math.md) - Использование пакета `math` чтобы нарисовать SVG-часы
 
-### Build an application
+### Создание приложения
 
 Now that you have hopefully digested the _Go Fundamentals_ section you have a solid grounding of a majority of Go's language features and how to do TDD.
 
