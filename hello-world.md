@@ -2,9 +2,9 @@
 
 **[Вы можете найти весь код для этого раздела тут](/hello-world)**
 
-It is traditional for your first program in a new language to be [Hello, World](https://en.m.wikipedia.org/wiki/%22Hello,_World!%22_program).
+По традиции, первой написанной программой на новом языке программирования должен быть [Hello, World](https://en.m.wikipedia.org/wiki/%22Hello,_World!%22_program).
 
-In the [previous chapter](install-go.md#go-environment) we discussed how Go is opinionated as to where you put your files.
+В [в предыдущем разделе](install-go.md#go-environment) мы обсудили, как Go определяет, где вы располагаете свои файли.
 
 Make a directory in the following path `$GOPATH/src/github.com/{your-user-id}/hello`.
 
