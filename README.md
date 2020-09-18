@@ -71,7 +71,7 @@ By the end of this, you should have a strong grasp as to how to iteratively writ
 * [Time](time.md) - using the `time` package to schedule activities.
 * [WebSockets](websockets.md) - learn how to write and test a server that uses WebSockets.
 
-### Questions and answers
+### Вопросы и ответы
 
 I often run in to questions on the internets like
 
@@ -104,7 +104,7 @@ I love this book but it requires a high level of commitment. The book is very de
 
 I found that whilst a small number of people would read chapter X and do the exercises, many people didn't.
 
-#### Solve some problems
+#### Решение проблем
 
 Katas are fun but they are usually limited in their scope for learning a language; you're unlikely to use goroutines to solve a kata.
 
