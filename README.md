@@ -1,4 +1,4 @@
-# Изучение Go с Тестами
+# Изучение Go через Тестирование
 
 <p align="center">
   <img src="red-green-blue-gophers-smaller.png" />
