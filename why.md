@@ -28,7 +28,7 @@ In 1974 a clever software engineer called [Manny Lehman](https://en.wikipedia.or
 
 These forces seem like important things to understand if we have any hope of not being in an endless cycle of shipping systems that turn into legacy and then get re-written over and over again.
 
-## The Law of Continuous Change
+## Закон непрерывного изменения
 
 > Any software system used in the real-world must change or become less and less useful in the environment
 
@@ -42,7 +42,7 @@ Even if you're an incredible software engineer, you will still fall victim to no
 
 Lehman was on a roll in the 70s because he gave us another law to chew on.
 
-## The Law of Increasing Complexity
+## Закон возрастающей сложности
 
 > As a system evolves, its complexity increases unless work is done to reduce it
 
@@ -50,7 +50,7 @@ What he's saying here is we can't have software teams as blind feature factories
 
 We **have** to keep managing the complexity of the system as the knowledge of our domain changes. 
 
-## Refactoring
+## Рефакторинг
 
 There are _many_ facets of software engineering that keeps software malleable, such as:
 
@@ -75,7 +75,7 @@ I know that I and many others have _thought_ we were doing refactoring but we we
 
 So what is it?
 
-### Factorisation
+### Факторинг
 
 When learning maths at school you probably learned about factorisation. Here's a very simple example
 
@@ -89,7 +89,7 @@ We can take some important lessons from this. When we _factorise the expression_
 
 When you refactor your code, you are trying to find ways of making your code easier to understand and "fit" into your current understanding of what the system needs to do. Crucially **you should not be changing behaviour**. 
 
-#### An example in Go
+#### Пример на Go
 
 Here is a function which greets `name` in a particular `language`
 
@@ -158,7 +158,7 @@ Those who choose not to write tests will typically be reliant on manual testing.
 - Documentation for humans as to how the system should behave
 - Much faster and more reliable feedback than manual testing
 
-#### An example in Go
+#### Пример на Go
 
 A unit test for our `Hello` function could look like this
 
@@ -195,7 +195,7 @@ Ask yourself, how often do you have to change your tests when refactoring? Over 
 
 This is the opposite of what we are promised!
 
-### Why is this happening?
+### Почему это происходит?
 
 Imagine you were asked to develop a square and we thought the best way to accomplish that would be stick two triangles together. 
 
