@@ -130,10 +130,10 @@ What I like to do is explore concepts and then solidify the ideas with tests. Te
 
 Taking my experience of learning with a group and my own personal way I am going to try and create something that hopefully proves useful to other teams. Learning the fundamentals by writing small tests so that you can then take your existing software design skills and ship some great systems.
 
-## Who this is for
+## Для кого 
 
-* People who are interested in picking up Go.
-* People who already know some Go, but want to explore testing with TDD.
+* Люди, заинтересованные в Go.
+* Люди, которые уже знают Go, но хотят изучить тестирование через TDD.
 
 ## Что Вам потребуется
 
@@ -145,8 +145,8 @@ Taking my experience of learning with a group and my own personal way I am going
 
 ## Обратная связь
 
-* Создайте issues/отправьте PRs ([русский репозиторий](https://github.com/ohDaddyPlease/learn-go-with-tests-ru), [оригинальный репозиторий](https://github.com/quii/learn-go-with-tests)) or [tweet me @quii](https://twitter.com/quii)
+* Создайте issues/отправьте PRs ([русский репозиторий](https://github.com/ohDaddyPlease/learn-go-with-tests-ru), [оригинальный репозиторий](https://github.com/quii/learn-go-with-tests)) or [твитните автора @quii](https://twitter.com/quii) или напишите переводчику в [telegram](https://t.me.com/sergiusnovikov)
 
 [MIT license](LICENSE.md)
 
-[Logo is by egonelbre](https://github.com/egonelbre) What a star!
+[Logo is by egonelbre](https://github.com/egonelbre) Какая прелесть!
