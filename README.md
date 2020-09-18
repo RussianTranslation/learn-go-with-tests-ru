@@ -1,4 +1,4 @@
-# Learn Go with Tests
+# Изучение Go с Тестами
 
 <p align="center">
   <img src="red-green-blue-gophers-smaller.png" />
@@ -9,25 +9,25 @@
 [![Build Status](https://travis-ci.org/quii/learn-go-with-tests.svg?branch=main)](https://travis-ci.org/quii/learn-go-with-tests)
 [![Go Report Card](https://goreportcard.com/badge/github.com/quii/learn-go-with-tests)](https://goreportcard.com/report/github.com/quii/learn-go-with-tests)
 
-## Formats
+## Где читать
 
 - [Gitbook](https://quii.gitbook.io/learn-go-with-tests)
 - [EPUB or PDF](https://github.com/quii/learn-go-with-tests/releases)
 
-## Translations
+## Переводы
 
 - [中文](https://studygolang.gitbook.io/learn-go-with-tests)
 - [Português](https://larien.gitbook.io/aprenda-go-com-testes/)
 - [日本語](https://andmorefine.gitbook.io/learn-go-with-tests/)
 
-[Buy me a coffee :coffee:](https://www.buymeacoffee.com/quii)!
+[Поблагодарить автора :coffee:](https://www.buymeacoffee.com/quii)!
 
-## Why
+## Почему
 
-* Explore the Go language by writing tests
-* **Get a grounding with TDD**. Go is a good language for learning TDD because it is a simple language to learn and testing is built-in
-* Be confident that you'll be able to start writing robust, well-tested systems in Go
-* [Watch a video, or read about why unit testing and TDD is important](why.md)
+* Изучение языка программирования Go посредством написания тестов
+* **Освоение TDD**. Go - прекрасный язык программирования, чтобы изучить TDD,  так как он (Go) легкий в изучении, а тестирование встроено в сам язык
+* Будьте уверены, что Вы сможете начать писать надежные, хорошо тестируемые системы на Go
+* [Посмотрите видео или прочитайте, почему Unit-тестирование и TDD важны](why.md)
 
 ## Table of contents
 
