@@ -1,10 +1,10 @@
-# Why unit tests and how to make them work for you
+# Почему unit-тесты и как заставить их работать на себя
 
-[Here's a link to a video of me chatting about this topic](https://www.youtube.com/watch?v=Kwtit8ZEK7U)
+[Вот ссылка на видео, где я разговариваю на эту тему](https://www.youtube.com/watch?v=Kwtit8ZEK7U)
 
-If you're not into videos, here's wordy version of it.
+Если вам не нравится видеоформат, то вот текстовая версия.
 
-## Software 
+## Программное обеспечение 
 
 The promise of software is that it can change. This is why it is called _soft_ ware, it is malleable compared to hardware. A great engineering team should be an amazing asset to a company, writing systems that can evolve with a business to keep delivering value. 
 
@@ -245,12 +245,12 @@ We've covered
 
 What we can start to see is that these facets of software design reinforce each other. 
 
-### Refactoring
+### Рефакторинг
 
 - Gives us signals about our unit tests. If we have to do manual checks, we need more tests. If tests are wrongly failing then our tests are at the wrong abstraction level (or have no value and should be deleted).
 - Helps us handle the complexities within and between our units.
 
-### Unit tests
+### Unit-тесты
 
 - Give a safety net to refactor.
 - Verify and document the behaviour of our units.
@@ -262,7 +262,7 @@ What we can start to see is that these facets of software design reinforce each 
 
 Is there a process to help us arrive at a point where we can constantly refactor our code to manage complexity and keep our systems malleable?
 
-## Why Test Driven Development (TDD)
+## Почему разработка через тестирование (TDD)
 
 Some people might take Lehman's quotes about how software has to change and overthink elaborate designs, wasting lots of time upfront trying to create the "perfect" extensible system and end up getting it wrong and going nowhere. 
 
@@ -288,7 +288,7 @@ You'll come to expect this feedback loop to not take very long and feel uneasy i
 
 You'll always be driving small & useful functionality comfortably backed by the feedback from your tests.
 
-## Wrapping up 
+## Итоги
 
 - The strength of software is that we can change it. _Most_ software will require change over time in unpredictable ways; but don't try and over-engineer because it's too hard to predict the future.
 - Instead we need to make it so we can keep our software malleable. In order to change software we have to refactor it as it evolves or it will turn into a mess
