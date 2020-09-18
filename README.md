@@ -91,27 +91,27 @@
 * Прочитайте руководство [contributing.md](https://github.com/quii/learn-go-with-tests/tree/842f4f24d1f1c20ba3bb23cbc376c7ca6f7ca79a/contributing.md)
 * Есть идеи? Создайте issue
 
-## Background
+## Истоки
 
-I have some experience introducing Go to development teams and have tried different approaches as to how to grow a team from some people curious about Go into highly effective writers of Go systems.
+У меня есть некоторый опыт представления Go командам разработчиков, и я пробовал разные подходы к тому, как вырастить команду из людей, интересующихся Go, в высокоэффективных Go разработчиков.
 
-### What didn't work
+### Что не сработало
 
-#### Read _the_ book
+#### Чтение _какой-то_ книги
 
-An approach we tried was to take [the blue book](https://www.amazon.co.uk/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440) and every week discuss the next chapter along with the exercises.
+Мы попробовали использовать [синюю книгу] (https://www.amazon.co.uk/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440) и каждую неделю обсуждать следующую главу вместе с упражнениями.
 
-I love this book but it requires a high level of commitment. The book is very detailed in explaining concepts, which is obviously great but it means that the progress is slow and steady - this is not for everyone.
+Мне нравится эта книга, но она требует большой отдачи. В книге очень подробно объясняются концепции, что, конечно, здорово, но это означает, что прогресс идет медленно и неуклонно - это не для всех.
 
-I found that whilst a small number of people would read chapter X and do the exercises, many people didn't.
+Я обнаружил, что, хотя небольшое количество людей читало главу X и выполняло упражнения, многие люди этого не делали.
 
 #### Решение проблем
 
-Katas are fun but they are usually limited in their scope for learning a language; you're unlikely to use goroutines to solve a kata.
+Каты (kata exercises) - это весело, но они обычно ограничены в возможностях изучения языка; вы вряд ли будете использовать горутины для решения каты.
 
-Another problem is when you have varying levels of enthusiasm. Some people just learn way more of the language than others and when demonstrating what they have done end up confusing people with features the others are not familiar with.
+Другая проблема - это когда у вас разный уровень энтузиазма. Некоторые люди просто изучают язык больше, чем другие, и, демонстрируя то, что они сделали и знают, в конечном итоге сбивают людей с толку функциями, с которыми другие не знакомы.
 
-This ends up making the learning feel quite _unstructured_ and _ad hoc_.
+Это приводит к тому, что обучение кажется совершенно _неструктурированным_ и _бесполезным_.
 
 ### What did work
 
