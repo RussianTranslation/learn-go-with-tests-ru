@@ -81,7 +81,7 @@
 
 * [OS exec](os-exec.md) - Пример того, как мы можем обратиться к ОС для выполнения команд для выборки данных и обеспечения тестируемости нашей бизнес-логики.
 * [Типы `error`](error-types.md) - Пример создания собственных типов ошибок для улучшения тестирования и упрощения работы с кодом.
-* [Контекстно-зависимый Reader](context-aware-reader.md) - Узнайте, как TDD дополняет `io.Reader` с отменой (cancellation). Основывается на [Контекстно-зависимый io.Reader для Go] (https://pace.dev/blog/2020/02/03/context-aware-ioreader-for-golang-by-mat-ryer)
+* [Контекстно-зависимый Reader](context-aware-reader.md) - Узнайте, как TDD дополняет `io.Reader` с отменой (cancellation). Основывается на [Контекстно-зависимый io.Reader для Go](https://pace.dev/blog/2020/02/03/context-aware-ioreader-for-golang-by-mat-ryer)
 * [Возвращение к HTTP-обработчикам](http-handlers-revisited.md) - Установление HTTP-обработчиков кажется ужасом для многих разработчиков. В этой главе рассматриваются вопросы, связанные с правильным проектированием обработчиков.
 
 
