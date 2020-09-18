@@ -6,7 +6,7 @@
 
 В [в предыдущем разделе](install-go.md#go-environment) мы обсудили, как Go определяет, где вы располагаете свои файли.
 
-Make a directory in the following path `$GOPATH/src/github.com/{your-user-id}/hello`.
+Создайте директорию по пути `$GOPATH/src/github.com/{your-user-id}/hello`.
 
 So if you're on a unix based OS and you are happy to stick with Go's conventions about `$GOPATH` (which is the easiest way of setting up) you could run `mkdir -p $GOPATH/src/github.com/$USER/hello`.
 
@@ -24,7 +24,7 @@ func main() {
 }
 ```
 
-## How it works
+## Как это работает
 
 When you write a program in Go you will have a `main` package defined with a `main` func inside it. Packages are ways of grouping up related Go code together.
 
@@ -32,7 +32,7 @@ The `func` keyword is how you define a function with a name and a body.
 
 With `import "fmt"` we are importing a package which contains the `Println` function that we use to print.
 
-## How to test
+## Как тестировать
 
 How do you test this? It is good to separate your "domain" code from the outside world \(side-effects\). The `fmt.Println` is a side effect \(printing to stdout\) and the string we send in is our domain.
 
@@ -75,7 +75,7 @@ Before explaining, let's just run the code. Run `go test` in your terminal. It s
 
 Notice how you have not had to pick between multiple testing frameworks and then figure out how to install. Everything you need is built in to the language and the syntax is the same as the rest of the code you will write.
 
-### Writing tests
+### Написание тестов
 
 Writing a test is just like writing a function, with a few rules
 
@@ -90,7 +90,7 @@ We've covered some new topics:
 #### `if`
 If statements in Go are very much like other programming languages.
 
-#### Declaring variables
+#### Объявление переменных
 
 We're declaring some variables with the syntax `varName := value`, which lets us re-use some values in our test for readability.
 
@@ -191,7 +191,7 @@ to commit at this point in case you somehow get into a mess with refactoring - y
 
 There's not a lot to refactor here, but we can introduce another language feature, _constants_.
 
-### Constants
+### Константы
 
 Constants are defined like so
 
@@ -215,7 +215,7 @@ Constants should improve performance of your application as it saves you creatin
 
 To be clear, the performance boost is incredibly negligible for this example! But it's worth thinking about creating constants to capture the meaning of values and sometimes to aid performance.
 
-## Hello, world... again
+## Hello, world... снова
 
 The next requirement is when our function is called with an empty string it defaults to printing "Hello, World", rather than "Hello, ".
 
@@ -328,7 +328,7 @@ By ensuring your tests are _fast_ and setting up your tools so that running test
 
 By not writing tests you are committing to manually checking your code by running your software which breaks your state of flow and you won't be saving yourself any time, especially in the long run.
 
-## Keep going! More requirements
+## Продолжаем! More requirements
 
 Goodness me, we have more requirements. We now need to support a second parameter, specifying the language of the greeting. If a language is passed in that we do not recognise, just default to English.
 
@@ -415,7 +415,7 @@ func Hello(name string, language string) string {
 }
 ```
 
-### French
+### Французский
 
 * Write a test asserting that if you pass in `"French"` you get `"Bonjour, "`
 * See it fail, check the error message is easy to read
@@ -502,7 +502,7 @@ A few new concepts:
 * `default` in the switch case will be branched to if none of the other `case` statements match.
 * The function name starts with a lowercase letter. In Go public functions start with a capital letter and private ones start with a lowercase. We don't want the internals of our algorithm to be exposed to the world, so we made this function private.
 
-## Wrapping up
+## Итоги
 
 Who knew you could get so much out of `Hello, world`?
 
