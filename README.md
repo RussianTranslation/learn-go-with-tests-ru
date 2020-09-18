@@ -135,17 +135,17 @@ Taking my experience of learning with a group and my own personal way I am going
 * People who are interested in picking up Go.
 * People who already know some Go, but want to explore testing with TDD.
 
-## What you'll need
+## Что Вам потребуется
 
-* A computer!
-* [Installed Go](https://golang.org/)
-* A text editor
-* Some experience with programming. Understanding of concepts like `if`, variables, functions etc.
-* Comfortable with using the terminal
+* Компьютер!
+* [Установленный Go](https://golang.org/)
+* Текстовый редактор
+* Некоторый опыт программирования. Понимание таких концепций как: оператор `if`, переменные, функции и т.д.
+* Не бояться использовать терминал
 
-## Feedback
+## Обратная связь
 
-* Add issues/submit PRs [here](https://github.com/quii/learn-go-with-tests) or [tweet me @quii](https://twitter.com/quii)
+* Создайте issues/отправьте PRs ([русский репозиторий](https://github.com/ohDaddyPlease/learn-go-with-tests-ru), [оригинальный репозиторий](https://github.com/quii/learn-go-with-tests)) or [tweet me @quii](https://twitter.com/quii)
 
 [MIT license](LICENSE.md)
 
