@@ -4,21 +4,21 @@
 
 Если вам не нравится видеоформат, то вот текстовая версия.
 
-## Программное обеспечение 
+## Программное обеспечение
 
-The promise of software is that it can change. This is why it is called _soft_ ware, it is malleable compared to hardware. A great engineering team should be an amazing asset to a company, writing systems that can evolve with a business to keep delivering value. 
+The promise of software is that it can change. This is why it is called _soft_ ware, it is malleable compared to hardware. A great engineering team should be an amazing asset to a company, writing systems that can evolve with a business to keep delivering value.
 
-So why are we so bad at it? How many projects do you hear about that outright fail? Or become "legacy" and have to be entirely re-written (and the re-writes often fail too!) 
+So why are we so bad at it? How many projects do you hear about that outright fail? Or become "legacy" and have to be entirely re-written (and the re-writes often fail too!)
 
 How does a software system "fail" anyway? Can't it just be changed until it's correct? That's what we're promised!
 
-A lot of people are choosing Go to build systems because it has made a number of choices which one hopes will make it more legacy-proof. 
+A lot of people are choosing Go to build systems because it has made a number of choices which one hopes will make it more legacy-proof.
 
 - Compared to my previous life of Scala where [I described how it has enough rope to hang yourself](http://www.quii.dev/Scala_-_Just_enough_rope_to_hang_yourself), Go has only 25 keywords and _a lot_ of systems can be built from the standard library and a few other small libraries. The hope is that with Go you can write code and come back to it in 6 months time and it'll still make sense.
 - The tooling in respect to testing, benchmarking, linting & shipping is first class compared to most alternatives.
 - The standard library is brilliant.
 - Very fast compilation speed for tight feedback loops
-- The Go backward compatibility promise. It looks like Go will get generics and other features in the future but the designers have promised that even Go code you wrote 5 years ago will still build. I literally spent weeks upgrading a project from Scala 2.8 to 2.10. 
+- The Go backward compatibility promise. It looks like Go will get generics and other features in the future but the designers have promised that even Go code you wrote 5 years ago will still build. I literally spent weeks upgrading a project from Scala 2.8 to 2.10.
 
 Even with all these great properties we can still make terrible systems, so we should look to the past and understand lessons in software engineering that apply no matter how shiny (or not) your language is.
 
@@ -32,9 +32,9 @@ These forces seem like important things to understand if we have any hope of not
 
 > Any software system used in the real-world must change or become less and less useful in the environment
 
-It feels obvious that a system _has_ to change or it becomes less useful but how often is this ignored? 
+It feels obvious that a system _has_ to change or it becomes less useful but how often is this ignored?
 
-Many teams are incentivised to deliver a project on a particular date and then moved on to the next project. If the software is "lucky" there is at least some kind of hand-off to another set of individuals to maintain it, but they didn't write it of course. 
+Many teams are incentivised to deliver a project on a particular date and then moved on to the next project. If the software is "lucky" there is at least some kind of hand-off to another set of individuals to maintain it, but they didn't write it of course.
 
 People often concern themselves with trying to pick a framework which will help them "deliver quickly" but not focusing on the longevity of the system in terms of how it needs to evolve.
 
@@ -46,9 +46,9 @@ Lehman was on a roll in the 70s because he gave us another law to chew on.
 
 > As a system evolves, its complexity increases unless work is done to reduce it
 
-What he's saying here is we can't have software teams as blind feature factories, piling more and more features on to software in the hope it will survive in the long run. 
+What he's saying here is we can't have software teams as blind feature factories, piling more and more features on to software in the hope it will survive in the long run.
 
-We **have** to keep managing the complexity of the system as the knowledge of our domain changes. 
+We **have** to keep managing the complexity of the system as the knowledge of our domain changes.
 
 ## Рефакторинг
 
@@ -63,7 +63,7 @@ There are _many_ facets of software engineering that keeps software malleable, s
 - Automated tests
 - Feedback loops
 
-I am going to focus on refactoring. It's a phrase that gets thrown around a lot "we need to refactor this" - said to a developer on their first day of programming without a second thought. 
+I am going to focus on refactoring. It's a phrase that gets thrown around a lot "we need to refactor this" - said to a developer on their first day of programming without a second thought.
 
 Where does the phrase come from? How is refactoring just different from writing code?
 
@@ -81,13 +81,13 @@ When learning maths at school you probably learned about factorisation. Here's a
 
 Calculate `1/2 + 1/4`
 
-To do this you _factorise_ the denominators, turning the expression into 
+To do this you _factorise_ the denominators, turning the expression into
 
-`2/4 + 1/4` which you can then turn into `3/4`. 
+`2/4 + 1/4` which you can then turn into `3/4`.
 
-We can take some important lessons from this. When we _factorise the expression_ we have **not changed the meaning of the expression**. Both of them equal `3/4` but we have made it easier for us to work with; by changing `1/2` to `2/4` it fits into our "domain" easier. 
+We can take some important lessons from this. When we _factorise the expression_ we have **not changed the meaning of the expression**. Both of them equal `3/4` but we have made it easier for us to work with; by changing `1/2` to `2/4` it fits into our "domain" easier.
 
-When you refactor your code, you are trying to find ways of making your code easier to understand and "fit" into your current understanding of what the system needs to do. Crucially **you should not be changing behaviour**. 
+When you refactor your code, you are trying to find ways of making your code easier to understand and "fit" into your current understanding of what the system needs to do. Crucially **you should not be changing behaviour**.
 
 #### Пример на Go
 
@@ -95,17 +95,17 @@ Here is a function which greets `name` in a particular `language`
 
 ```Go
     func Hello(name, language string) string {
-    
+
       if language == "es" {
          return "Hola, " + name
       }
-    
+
       if language == "fr" {
          return "Bonjour, " + name
       }
-      
+
       // представьте десятки других языков
-    
+
       return "Hello, " + name
     }
 ```
@@ -120,38 +120,38 @@ Having dozens of `if` statements doesn't feel good and we have a duplication of 
       		name,
       	)
     }
-    
+
     var greetings = map[string]string {
       es: "Hola",
       fr: "Bonjour",
       //и т.д.
     }
-    
+
     func greeting(language string) string {
       greeting, exists := greetings[language]
-      
+
       if exists {
          return greeting
       }
-      
+
       return "Hello"
     }
 ```
 
-The nature of this refactor isn't actually important, what's important is I haven't changed behaviour. 
+The nature of this refactor isn't actually important, what's important is I haven't changed behaviour.
 
 When refactoring you can do whatever you like, add interfaces, new types, functions, methods etc. The only rule is you don't change behaviour
 
 ### When refactoring code you must not be changing behaviour
 
-This is very important. If you are changing behaviour at the same time you are doing _two_ things at once. As software engineers we learn to break systems up into different files/packages/functions/etc because we know trying to understand a big blob of stuff is hard. 
+This is very important. If you are changing behaviour at the same time you are doing _two_ things at once. As software engineers we learn to break systems up into different files/packages/functions/etc because we know trying to understand a big blob of stuff is hard.
 
-We don't want to have to be thinking about lots of things at once because that's when we make mistakes. I've witnessed so many refactoring endeavours fail because the developers are biting off more than they can chew.  
+We don't want to have to be thinking about lots of things at once because that's when we make mistakes. I've witnessed so many refactoring endeavours fail because the developers are biting off more than they can chew.
 
 When I was doing factorisations in maths classes with pen and paper I would have to manually check that I hadn't changed the meaning of the expressions in my head. How do we know we aren't changing behaviour when refactoring when working with code, especially on a system that is non-trivial?
 
-Those who choose not to write tests will typically be reliant on manual testing. For anything other than a small project this will be a tremendous time-sink and does not scale in the long run. 
- 
+Those who choose not to write tests will typically be reliant on manual testing. For anything other than a small project this will be a tremendous time-sink and does not scale in the long run.
+
 **In order to safely refactor you need unit tests** because they provide
 
 - Confidence you can reshape code without worrying about changing behaviour
@@ -166,20 +166,20 @@ A unit test for our `Hello` function could look like this
     func TestHello(t *testing.T) {
       got := Hello(“Chris”, es)
       want := "Hola, Chris"
-    
+
       if got != want {
          t.Errorf("got %q want %q", got, want)
       }
     }
 ```
 
-At the command line I can run `go test` and get immediate feedback as to whether my refactoring efforts have altered behaviour. In practice it's best to learn the magic button to run your tests within your editor/IDE. 
+At the command line I can run `go test` and get immediate feedback as to whether my refactoring efforts have altered behaviour. In practice it's best to learn the magic button to run your tests within your editor/IDE.
 
-You want to get in to a state where you are doing 
+You want to get in to a state where you are doing
 
-- Small refactor
-- Run tests
-- Repeat
+- Внесение некоторых изменений
+- Запуск тестов
+- Повтор предыдущих действий
 
 All within a very tight feedback loop so you don't go down rabbit holes and make mistakes.
 
@@ -187,7 +187,7 @@ Having a project where all your key behaviours are unit tested and give you feed
 
 ## If unit tests are so great, why is there sometimes resistance to writing them?
 
-On the one hand you have people (like me) saying that unit tests are important for the long term health of your system because they ensure you can keep refactoring with confidence. 
+On the one hand you have people (like me) saying that unit tests are important for the long term health of your system because they ensure you can keep refactoring with confidence.
 
 On the other you have people describing experiences of unit tests actually _hindering_ refactoring.
 
@@ -197,33 +197,33 @@ This is the opposite of what we are promised!
 
 ### Почему это происходит?
 
-Imagine you were asked to develop a square and we thought the best way to accomplish that would be stick two triangles together. 
+Imagine you were asked to develop a square and we thought the best way to accomplish that would be stick two triangles together.
 
 ![Two right-angled triangles to form a square](https://i.imgur.com/ela7SVf.jpg)
 
-We write our unit tests around our square to make sure the sides are equal and then we write some tests around our triangles. We want to make sure our triangles render correctly so we assert that the angles sum up to 180 degrees, perhaps check we make 2 of them, etc etc. Test coverage is really important and writing these tests is pretty easy so why not? 
+We write our unit tests around our square to make sure the sides are equal and then we write some tests around our triangles. We want to make sure our triangles render correctly so we assert that the angles sum up to 180 degrees, perhaps check we make 2 of them, etc etc. Test coverage is really important and writing these tests is pretty easy so why not?
 
-A few weeks later The Law of Continuous Change strikes our system and a new developer makes some changes. She now believes it would be better if squares were formed with 2 rectangles instead of 2 triangles. 
+A few weeks later The Law of Continuous Change strikes our system and a new developer makes some changes. She now believes it would be better if squares were formed with 2 rectangles instead of 2 triangles.
 
 ![Two rectangles to form a square](https://i.imgur.com/1G6rYqD.jpg)
 
-She tries to do this refactor and gets mixed signals from a number of failing tests. Has she actually broken important behaviours here? She now has to dig through these triangle tests and try and understand what's going on. 
+She tries to do this refactor and gets mixed signals from a number of failing tests. Has she actually broken important behaviours here? She now has to dig through these triangle tests and try and understand what's going on.
 
-_It's not actually important that the square was formed out of triangles_ but **our tests have falsely elevated the importance of our implementation details**. 
+_It's not actually important that the square was formed out of triangles_ but **our tests have falsely elevated the importance of our implementation details**.
 
 ## Favour testing behaviour rather than implementation detail
 
-When I hear people complaining about unit tests it is often because the tests are at the wrong abstraction level. They're testing implementation details, overly spying on collaborators and mocking too much. 
+When I hear people complaining about unit tests it is often because the tests are at the wrong abstraction level. They're testing implementation details, overly spying on collaborators and mocking too much.
 
-I believe it stems from a misunderstanding of what unit tests are and chasing vanity metrics (test coverage). 
+I believe it stems from a misunderstanding of what unit tests are and chasing vanity metrics (test coverage).
 
-If I am saying just test behaviour, should we not just only write system/black-box tests? These kind of tests do have lots of value in terms of verifying key user journeys but they are typically expensive to write and slow to run. For that reason they're not too helpful for _refactoring_ because the feedback loop is slow. In addition black box tests don't tend to help you very much with root causes compared to unit tests. 
+If I am saying just test behaviour, should we not just only write system/black-box tests? These kind of tests do have lots of value in terms of verifying key user journeys but they are typically expensive to write and slow to run. For that reason they're not too helpful for _refactoring_ because the feedback loop is slow. In addition black box tests don't tend to help you very much with root causes compared to unit tests.
 
 So what _is_ the right abstraction level?
 
 ## Writing effective unit tests is a design problem
 
-Forgetting about tests for a moment, it is desirable to have within your system self-contained, decoupled "units" centered around key concepts in your domain. 
+Forgetting about tests for a moment, it is desirable to have within your system self-contained, decoupled "units" centered around key concepts in your domain.
 
 I like to imagine these units as simple Lego bricks which have coherent APIs that I can combine with other bricks to make bigger systems. Underneath these APIs there could be dozens of things (types, functions et al) collaborating to make them work how they need to.
 
@@ -243,7 +243,7 @@ We've covered
 - Unit tests
 - Unit design
 
-What we can start to see is that these facets of software design reinforce each other. 
+What we can start to see is that these facets of software design reinforce each other.
 
 ### Рефакторинг
 
@@ -264,11 +264,11 @@ Is there a process to help us arrive at a point where we can constantly refactor
 
 ## Почему разработка через тестирование (TDD)
 
-Some people might take Lehman's quotes about how software has to change and overthink elaborate designs, wasting lots of time upfront trying to create the "perfect" extensible system and end up getting it wrong and going nowhere. 
+Some people might take Lehman's quotes about how software has to change and overthink elaborate designs, wasting lots of time upfront trying to create the "perfect" extensible system and end up getting it wrong and going nowhere.
 
 This is the bad old days of software where an analyst team would spend 6 months writing a requirements document and an architect team would spend another 6 months coming up with a design and a few years later the whole project fails.
 
-I say bad old days but this still happens! 
+I say bad old days but this still happens!
 
 Agile teaches us that we need to work iteratively, starting small and evolving the software so that we get fast feedback on the design of our software and how it works with real users;  TDD enforces this approach.
 
@@ -284,7 +284,7 @@ TDD addresses the laws that Lehman talks about and other lessons hard learned th
 
 As you become proficient, this way of working will become natural and fast.
 
-You'll come to expect this feedback loop to not take very long and feel uneasy if you're in a state where the system isn't "green" because it indicates you may be down a rabbit hole. 
+You'll come to expect this feedback loop to not take very long and feel uneasy if you're in a state where the system isn't "green" because it indicates you may be down a rabbit hole.
 
 You'll always be driving small & useful functionality comfortably backed by the feedback from your tests.
 
