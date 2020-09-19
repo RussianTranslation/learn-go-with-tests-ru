@@ -29,11 +29,12 @@ func main() {
 
 ## Как это работает
 
-When you write a program in Go you will have a `main` package defined with a `main` func inside it. Packages are ways of grouping up related Go code together.
+Когда вы пишите программу на Go, у вас будет пакет `main`, внутри которого будет определена функция `main
+`. Пакеты - это способ группирования связанного между собой Go-кода.
 
-The `func` keyword is how you define a function with a name and a body.
+Ключевое слово `func` необходимо для определения имени функции и тела функции.
 
-With `import "fmt"` we are importing a package which contains the `Println` function that we use to print.
+При помощи `import "fmt"` мы импортируем пакет, который содержит функцию `Println`, необходимую для вывода информации.
 
 ## Как тестировать
 
