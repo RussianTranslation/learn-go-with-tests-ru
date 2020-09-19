@@ -8,11 +8,14 @@
 
 Создайте директорию по пути `$GOPATH/src/github.com/{your-user-id}/hello`.
 
-So if you're on a unix based OS and you are happy to stick with Go's conventions about `$GOPATH` (which is the easiest way of setting up) you could run `mkdir -p $GOPATH/src/github.com/$USER/hello`.
+Если вы используете unix-подобную ОС и вам нравится подход Go с использованием `$GOPATH
+` (который является самым простым для настройки), то можете запустить команду `mkdir -p $GOPATH/src/github.com/$USER/hello`.
 
-For subsequent chapters, you can make a new folder with whatever name you like to put the code in e.g `$GOPATH/src/github.com/{your-user-id}/integers` for the next chapter might be sensible. Some readers of this book like to make an enclosing folder for all the work such as "learn-go-with-tests/hello". In short, it's up to you how you structure your folders.
+Для следующих разделов вы можете создать новую папку для кода с любым именем. Например, `$GOPATH/src/github.com/{your-user-id}/integers
+` может быть подходящей папкой для следующего раздела. Некоторым читателям может понравиться идея создать единую папку для всех работ, например, "learn-go-with-tests/hello". В общем, вам решать, как структурировать папки.
 
-Create a file in this directory called `hello.go` and write this code. To run it type `go run hello.go`.
+Создайте файл с названием `hello.go` в этой директории и напишите следующий код. Для запуска выполните команду
+ `go run hello.go`.
 
 ```go
 package main
