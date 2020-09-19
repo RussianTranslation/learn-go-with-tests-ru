@@ -4,7 +4,7 @@
 
 По традиции, первой написанной программой на новом языке программирования должен быть [Hello, World](https://en.m.wikipedia.org/wiki/%22Hello,_World!%22_program).
 
-В [в предыдущем разделе](install-go.md#go-environment) мы обсудили, как Go определяет, где вы располагаете свои файли.
+В [предыдущем разделе](install-go.md#go-environment) мы обсудили, как Go определяет, где вы располагаете свои файли.
 
 Создайте директорию по пути `$GOPATH/src/github.com/{your-user-id}/hello`.
 
